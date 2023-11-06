@@ -38,6 +38,7 @@ aside {
 #nav-YtButton {
   display: flex;
   align-items: center;
+  margin-right: 20px;
 }
 #nav-Hamburger {
   width: 40px;
@@ -52,7 +53,6 @@ aside {
 /* nav_SearchBar */
 #nav-SearchBar {
   flex: 0 1 600px;
-  min-width: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -103,6 +103,7 @@ aside {
   display: flex;
   height: 40px;
   width: auto;
+  margin-left: 15px;
 }
 
 /* aside */

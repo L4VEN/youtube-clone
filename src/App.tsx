@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./index.css";
-import VideoComponent from "./video-cmp";
+import VideoComponent from "./VideoComponent";
 
 function App() {
   const [isInteracting, setIsInteracting] = useState(false);

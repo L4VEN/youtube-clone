@@ -1,19 +1,22 @@
-// VideoComponent.tsx
-import React from "react";
-import { videos } from "./data/videos";
-import "./data/video-style.css";
+// import React from "react";
 
-const VideoComponent: React.FC = () => {
-  const videoData = videos[0];
+interface VideoProps {
+  videoData: {
+    title: string;
+    channelName: string;
+    channelImage: string;
+    views: number;
+    uploadTime: string;
+    link: string;
+    thumbnail: string;
+  };
+}
 
+const Video: React.FC<VideoProps> = ({ videoData }) => {
   return (
     <div className="video-container">
-      <a href="https://youtu.be/rDFUl2mHIW4?feature=shared">
-        <img
-          className="video-player"
-          src="src/data/thumbnail/kidding.jpg"
-          alt="Video Thumbnail"
-        />
+      <a href={`https://youtu.be/${videoData.link}`}>
+        <img className="video-player" src={videoData.thumbnail} alt="" />
       </a>
       <div className="video-info">
         <img className="channel-icon" src={videoData.channelImage} alt="" />
@@ -31,4 +34,4 @@ const VideoComponent: React.FC = () => {
   );
 };
 
-export default VideoComponent;
+export default Video;
