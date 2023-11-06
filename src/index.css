@@ -1,0 +1,142 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* {
+  font-family: "Pretendard", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  background-color: #202020;
+}
+button {
+  all: unset;
+}
+header {
+  display: flex;
+  position: fixed;
+  height: 56px;
+  width: 100%;
+  padding: 0 16px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #121212;
+  z-index: 100;
+}
+aside {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-top: 56px;
+  width: 72px;
+  height: 100%;
+  background-color: #121212;
+}
+
+/* nav_YtButton */
+#nav-YtButton {
+  display: flex;
+  align-items: center;
+}
+#nav-Hamburger {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+#nav-YoutubeLogo {
+  height: 20px;
+  width: auto;
+}
+
+/* nav_SearchBar */
+#nav-SearchBar {
+  flex: 0 1 600px;
+  min-width: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#nav-Form {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  height: 40px;
+  border: 1px solid #404040;
+  background-color: #121212;
+  border-radius: 40px 0 0 40px;
+  transition: border-color 0.1s;
+}
+#nav-Input {
+  padding: 0px;
+  margin-left: 12px;
+  height: 100%;
+  width: 100%;
+  background-color: #121212;
+  border-radius: 10px;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+#nav-searchIcon {
+  width: 20px;
+  height: 20px;
+  margin-left: 12px;
+}
+#nav-searchBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  background-color: #252525;
+  border-color: #202020;
+  border-radius: 0 40px 40px 0;
+  cursor: pointer;
+  height: 40px;
+  width: 64px;
+}
+
+.nav-Apps {
+  display: flex;
+  height: 40px;
+  width: auto;
+}
+
+/* aside */
+.asideIcon {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70px;
+  background-color: #121212;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-top: 5px;
+  font-weight: 300;
+}
+.asideIcon > img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+  filter: invert(100%);
+}
+.asideIcon > div {
+  font-size: 10px;
+  color: #fff;
+}
+.asideIcon:hover {
+  background-color: #303030;
+}
+section {
+  width: 100%;
+  height: 100%;
+  margin-left: 100px;
+  padding-top: 85px;
+}

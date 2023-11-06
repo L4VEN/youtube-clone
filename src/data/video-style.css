@@ -1,0 +1,55 @@
+.video-container {
+  width: 368px;
+  height: 207px;
+  color: #fff;
+  font-size: 14px;
+  background-color: #202020;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.video-player {
+  width: 368px;
+  height: 198px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.video-info {
+  display: flex;
+  align-items: flex-start;
+}
+
+.channel-icon {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin-top: 12px;
+}
+
+.video-stats {
+  margin-left: 20px;
+}
+
+.video-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 14px 0 5px 0;
+  margin-top: 12px;
+}
+
+.channel-name {
+  font-size: 14px;
+  font-weight: normal;
+  color: #888;
+  margin: 0;
+}
+
+.views,
+.stats-divider,
+.upload-time {
+  font-size: 14px;
+  color: #888;
+}
