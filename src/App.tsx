@@ -16,9 +16,9 @@ function App() {
     <div>
       <header>
         <div id="nav-YtButton">
-          <a href="">
+          <div id="nav-hbgBG">
             <img src="src\assets\nav_hamburger.png" id="nav-Hamburger" />
-          </a>
+          </div>
           <a href="">
             <img src="src\assets\nav_ytbtn.png" id="nav-YoutubeLogo" />
           </a>

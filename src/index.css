@@ -40,14 +40,25 @@ aside {
   align-items: center;
   margin-right: 20px;
 }
+#nav-hbgBG {
+  width: 40px;
+  height: 40px;
+  background-color: #121212;
+  margin-right: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+#nav-hbgBG:hover {
+  background-color: #272727;
+}
 #nav-Hamburger {
   width: 40px;
   height: 40px;
-  margin-right: 16px;
 }
 #nav-YoutubeLogo {
   height: 20px;
   width: auto;
+  cursor: pointer;
 }
 
 /* nav_SearchBar */
@@ -91,7 +102,7 @@ aside {
   align-items: center;
   justify-content: center;
   box-shadow: none;
-  background-color: #252525;
+  background-color: #272727;
   border-color: #202020;
   border-radius: 0 40px 40px 0;
   cursor: pointer;
@@ -133,7 +144,7 @@ aside {
   color: #fff;
 }
 .asideIcon:hover {
-  background-color: #303030;
+  background-color: #272727;
 }
 section {
   width: 100%;
