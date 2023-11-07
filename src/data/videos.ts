@@ -15,7 +15,7 @@ export const videos = [
     channelImage: "src/data/channel/waktaverse.jpg",
     views: 1051685,
     uploadTime: "1개월 전",
-    link: "wyhwJnNpVJI",
+    link: "i4SRH9jfUMQ",
     thumbnail: "src/data/thumbnail/Over.jpg",
   },
   {

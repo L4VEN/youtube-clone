@@ -14,10 +14,15 @@ interface VideoProps {
 
 const Video: React.FC<VideoProps> = ({ videoData }) => {
   return (
-    <div className="video-container">
-      <a href={`https://youtu.be/${videoData.link}`}>
-        <img className="video-player" src={videoData.thumbnail} alt="" />
-      </a>
+    <a href={`https://youtu.be/${videoData.link}`} className="video-container">
+      {/* <a href={`https://youtu.be/${videoData.link}`}> */}
+      {/* <img className="video-player" src={videoData.thumbnail} alt="" /> */}
+      <img
+        className="video-player"
+        src={`https://img.youtube.com/vi/${videoData.link}/0.jpg`}
+        alt=""
+      />
+      {/* </a> */}
       <div className="video-info">
         <img className="channel-icon" src={videoData.channelImage} alt="" />
         <div className="video-stats">
@@ -30,7 +35,7 @@ const Video: React.FC<VideoProps> = ({ videoData }) => {
           <span className="upload-time">{videoData.uploadTime}</span>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 

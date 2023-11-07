@@ -23,10 +23,7 @@ function App() {
             <img src="src\assets\youtubeLogo.png" id="nav-YoutubeLogo" />
           </a>
         </div>
-        <div
-          id="nav-SearchBar"
-          // style={{ width: isInteracting ? "500px" : "470px" }}
-        >
+        <div id="nav-SearchBar">
           <div
             id="nav-Form"
             style={{ borderColor: isInteracting ? "#1c62b9" : "#303030" }}
