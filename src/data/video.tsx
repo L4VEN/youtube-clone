@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 
 interface VideoProps {
   videoData: {
@@ -8,21 +8,17 @@ interface VideoProps {
     views: number;
     uploadTime: string;
     link: string;
-    thumbnail: string;
   };
 }
 
 const Video: React.FC<VideoProps> = ({ videoData }) => {
   return (
     <a href={`https://youtu.be/${videoData.link}`} className="video-container">
-      {/* <a href={`https://youtu.be/${videoData.link}`}> */}
-      {/* <img className="video-player" src={videoData.thumbnail} alt="" /> */}
       <img
         className="video-player"
         src={`https://img.youtube.com/vi/${videoData.link}/0.jpg`}
         alt=""
       />
-      {/* </a> */}
       <div className="video-info">
         <img className="channel-icon" src={videoData.channelImage} alt="" />
         <div className="video-stats">

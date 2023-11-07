@@ -3,13 +3,13 @@ import "./index.css";
 import VideoComponent from "./VideoComponent";
 
 function App() {
-  const [isInteracting, setIsInteracting] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
 
   const handleInputFocus = () => {
-    setIsInteracting(true);
+    setIsClicked(true);
   };
   const handleInputBlur = () => {
-    setIsInteracting(false);
+    setIsClicked(false);
   };
 
   return (
@@ -26,9 +26,9 @@ function App() {
         <div id="nav-SearchBar">
           <div
             id="nav-Form"
-            style={{ borderColor: isInteracting ? "#1c62b9" : "#303030" }}
+            style={{ borderColor: isClicked ? "#1c62b9" : "#303030" }}
           >
-            {isInteracting ? (
+            {isClicked ? (
               <img src="src\assets\nav_search.svg" id="nav-searchIcon" />
             ) : null}
             <input
@@ -77,13 +77,11 @@ function App() {
           </a>
         </aside>
         <section>
-          <nav></nav>
           <div id="inner">
             <VideoComponent />
           </div>
         </section>
       </main>
-      <footer></footer>
     </div>
   );
 }

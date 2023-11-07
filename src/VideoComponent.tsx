@@ -1,10 +1,10 @@
-// VideoComponent.tsx
+// videoCmp.tsx
 import React from "react";
 import { videos } from "./data/videos";
 import "./data/video-style.css";
 import Video from "./data/video";
 
-const VideoComponent: React.FC = () => {
+const videoCmp: React.FC = () => {
   return (
     <div className="video-grid">
       {videos.map((videoData, v) => (
@@ -14,4 +14,4 @@ const VideoComponent: React.FC = () => {
   );
 };
 
-export default VideoComponent;
+export default videoCmp;
