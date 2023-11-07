@@ -17,10 +17,10 @@ function App() {
       <header>
         <div id="nav-YtButton">
           <a href="">
-            <img src="src\assets\hamburger.png" id="nav-Hamburger" />
+            <img src="src\assets\nav_hamburger.png" id="nav-Hamburger" />
           </a>
           <a href="">
-            <img src="src\assets\youtubeLogo.png" id="nav-YoutubeLogo" />
+            <img src="src\assets\nav_ytbtn.png" id="nav-YoutubeLogo" />
           </a>
         </div>
         <div id="nav-SearchBar">
@@ -29,7 +29,7 @@ function App() {
             style={{ borderColor: isInteracting ? "#1c62b9" : "#303030" }}
           >
             {isInteracting ? (
-              <img src="src\assets\search.svg" id="nav-searchIcon" />
+              <img src="src\assets\nav_search.svg" id="nav-searchIcon" />
             ) : null}
             <input
               type="text"
@@ -40,12 +40,12 @@ function App() {
             ></input>
           </div>
           <button id="nav-searchBtn">
-            <img src="src\assets\search.svg" alt="Search" />
+            <img src="src\assets\nav_search.svg" alt="Search" />
           </button>
         </div>
         <div id="nav-Profile">
           <a href="">
-            <img src="src\assets\Profile.png" className="nav-Apps" />
+            <img src="src\assets\nav_profile.png" className="nav-Apps" />
           </a>
         </div>
       </header>
@@ -78,7 +78,9 @@ function App() {
         </aside>
         <section>
           <nav></nav>
-          <VideoComponent />
+          <div id="inner">
+            <VideoComponent />
+          </div>
         </section>
       </main>
       <footer></footer>

@@ -141,8 +141,15 @@ section {
   padding-left: 100px;
   padding-top: 80px;
 }
-@media screen and (max-width: 540px) {
+@media only screen and (max-width: 540px) {
   #nav-SearchBar > * {
     display: none;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  #inner {
+    height: 100%;
+    width: 1600px;
+    margin: 0 auto;
   }
 }
