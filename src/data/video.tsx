@@ -1,3 +1,4 @@
+// video.tsx
 import React from "react";
 
 interface VideoProps {
@@ -8,6 +9,7 @@ interface VideoProps {
     views: number;
     uploadTime: string;
     link: string;
+    genre: string;
   };
 }
 

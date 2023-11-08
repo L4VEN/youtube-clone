@@ -1,17 +1,26 @@
-// videoCmp.tsx
+// videoComponent.tsx
 import React from "react";
 import { videos } from "./data/videos";
 import "./data/video-style.css";
 import Video from "./data/video";
 
-const videoCmp: React.FC = () => {
+interface VideoComponentProps {
+  selectedGenre: string;
+}
+
+const VideoComponent: React.FC<VideoComponentProps> = ({ selectedGenre }) => {
+  const filteredVideos =
+    selectedGenre === "all"
+      ? videos
+      : videos.filter((video) => video.genre === selectedGenre);
+
   return (
     <div className="video-grid">
-      {videos.map((videoData, v) => (
+      {filteredVideos.map((videoData, v) => (
         <Video key={v} videoData={videoData} />
       ))}
     </div>
   );
 };
 
-export default videoCmp;
+export default VideoComponent;

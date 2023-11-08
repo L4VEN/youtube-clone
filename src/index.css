@@ -150,8 +150,43 @@ section {
   width: 100%;
   height: 100%;
   padding-left: 100px;
-  padding-top: 80px;
+  padding-top: 60px;
 }
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+nav > * {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 32px;
+  min-width: 12px;
+  padding: 0 12px;
+  margin-right: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #303030;
+  color: #fff;
+}
+nav > *:not(.selected):hover {
+  background-color: #404040;
+  transition: all ease-out 0.15s;
+}
+.selected {
+  background-color: #fff;
+  color: #303030;
+}
+
 @media only screen and (max-width: 540px) {
   #nav-SearchBar > * {
     display: none;

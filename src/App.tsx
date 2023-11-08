@@ -1,15 +1,20 @@
+// App.tsx
 import { useState } from "react";
 import "./index.css";
 import VideoComponent from "./VideoComponent";
 
 function App() {
   const [isClicked, setIsClicked] = useState(false);
+  const [selectedGenre, setSelectedGenre] = useState("all");
 
   const handleInputFocus = () => {
     setIsClicked(true);
   };
   const handleInputBlur = () => {
     setIsClicked(false);
+  };
+  const handleGenre = (genre: string) => {
+    setSelectedGenre(genre);
   };
 
   return (
@@ -78,7 +83,27 @@ function App() {
         </aside>
         <section>
           <div id="inner">
-            <VideoComponent />
+            <nav>
+              <input
+                type="button"
+                value="전체"
+                onClick={() => handleGenre("all")}
+                className={selectedGenre === "all" ? "selected" : ""}
+              />
+              <input
+                type="button"
+                value="음악"
+                onClick={() => handleGenre("music")}
+                className={selectedGenre === "music" ? "selected" : ""}
+              />
+              <input
+                type="button"
+                value="게임"
+                onClick={() => handleGenre("game")}
+                className={selectedGenre === "game" ? "selected" : ""}
+              />
+            </nav>
+            <VideoComponent selectedGenre={selectedGenre} />
           </div>
         </section>
       </main>

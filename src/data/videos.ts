@@ -1,3 +1,4 @@
+// videos.ts
 export const videos = [
   {
     title: "이세계아이돌 (ISEGYE IDOL) - KIDDING (키딩) Official MV",
@@ -7,6 +8,7 @@ export const videos = [
     views: 10471698,
     uploadTime: "2개월 전",
     link: "rDFUl2mHIW4",
+    genre: "music",
   },
   {
     title: "MAKE IT FUNKY NOW",
@@ -16,6 +18,7 @@ export const videos = [
     views: 3152710,
     uploadTime: "4년 전",
     link: "bcoPG0oSqPI",
+    genre: "game",
   },
   {
     title: "24시간 동안 모든 해킹 당하기",
@@ -25,6 +28,7 @@ export const videos = [
     views: 3866555,
     uploadTime: "9개월 전",
     link: "Tyap-yKeFt4",
+    genre: "etc",
   },
   {
     title:
@@ -35,6 +39,7 @@ export const videos = [
     views: 627716,
     uploadTime: "3주 전",
     link: "P59C-l_aaX8",
+    genre: "game",
   },
   {
     title: "(Next.js 0강) 요즘 프론트엔드만으로 먹고살기 힘든 이유",
@@ -44,6 +49,7 @@ export const videos = [
     views: 133441,
     uploadTime: "6개월 전",
     link: "jYJ3ygUfPrU",
+    genre: "etc",
   },
   {
     title: "[𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁] 봄에 듣기 좋은 루시 노래 모음 🌸",
@@ -53,6 +59,7 @@ export const videos = [
     views: 439827,
     uploadTime: "6개월 전",
     link: "RwmcrmMABG0",
+    genre: "music",
   },
   {
     title: "Animation vs. Math",
@@ -62,6 +69,7 @@ export const videos = [
     views: 439827,
     uploadTime: "4개월 전",
     link: "B1J6Ou4q8vE",
+    genre: "etc",
   },
   {
     title: "와스레모노 忘れ物 / Vaundy (Cover by 아이네 INE)",
@@ -71,5 +79,25 @@ export const videos = [
     views: 439827,
     uploadTime: "1일 전",
     link: "YpCpF_CD2pM",
+    genre: "music",
   },
+  // {
+  //   title:
+  //     "이세계아이돌 (ISEGYE IDOL) - Superhero (슈퍼히어로) 이세계 페스티벌 Ver.",
+  //   channelName: "왁타버스 WAKTAVERSE",
+  //   channelImage:
+  //     "https://yt3.ggpht.com/QJdHgfT3P2HhhX4NdjtWYMK5vUNAjOmrKzBahdYOPMm62Qh2v3LaOOh_VW8pZso5TS8-gveo",
+  //   views: 1707617,
+  //   uploadTime: "1개월 전",
+  //   link: "wyhwJnNpVJI",
+  // },
+  // {
+  //   title: "이세계아이돌 (ISEGYE IDOL) - OVER (오버) 이세계 페스티벌 Ver.",
+  //   channelName: "왁타버스 WAKTAVERSE",
+  //   channelImage:
+  //     "https://yt3.ggpht.com/QJdHgfT3P2HhhX4NdjtWYMK5vUNAjOmrKzBahdYOPMm62Qh2v3LaOOh_VW8pZso5TS8-gveo",
+  //   views: 1065770,
+  //   uploadTime: "1개월 전",
+  //   link: "i4SRH9jfUMQ",
+  // },
 ];
